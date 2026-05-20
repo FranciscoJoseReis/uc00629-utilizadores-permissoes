@@ -5,19 +5,19 @@ O objetivo consiste em demonstrar a criação e gestão de contas de utilizador,
 ________________________________________
 🎥 Descrição dos Vídeos
 🔹 Criação de Utilizadores
-Vídeo: admin.mp4
+Vídeo: 01_Formando_Admin.mp4
 Demonstra a criação da conta Formando_Admin, incluindo a definição de palavra-passe e configuração das propriedades da conta. Esta conta será utilizada com privilégios elevados para administração do sistema.
-Vídeo: standard.mp4
+Vídeo: 02_Formando_Standard.mp4
 Apresenta a criação do utilizador Formando_Standard, com permissões limitadas, representando um utilizador comum do sistema.
-Vídeo: visitante.mp4
+Vídeo: 03_Visitante.mp4
 Mostra a criação da conta Visitante, com acesso restrito, sem privilégios administrativos e com controlo mínimo sobre o sistema.
 ________________________________________
 🔹 Definição de Grupos
-Vídeo: definicao_grupos.mp4
+Vídeo: 04_Definição_grupos.mp4
 Demonstra a atribuição dos utilizadores aos respetivos grupos do sistema, nomeadamente Administradores, Utilizadores e Convidados, evidenciando a importância da gestão de permissões baseada em grupos.
 ________________________________________
 🔹 Configuração de Permissões NTFS
-Vídeo: criacao_pasta.mp4
+Vídeo: 05_Criação_Pasta.mp4
 Apresenta a criação da pasta partilhada e a configuração das permissões NTFS, incluindo a atribuição de controlo total ao administrador, permissões de leitura ao utilizador standard e restrição de acesso ao utilizador visitante.
 ________________________________________
 🎯 Objetivo do Projeto
