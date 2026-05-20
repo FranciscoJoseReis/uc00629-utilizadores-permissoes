@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Relatório - Utilizadores e Permissões</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background-color: #f4f6f8;
+    }
+
+    header {
+      background: #1f2a44;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    nav {
+      background: #2c3e50;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    video {
+      width: 50%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    th {
+      background: #eee;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Configuração de Utilizadores e Permissões</h1>
+    <p>Relatório Técnico</p>
+  </header>
+
+  <nav>
+    <a href="#utilizadores">Utilizadores</a>
+    <a href="#grupos">Grupos</a>
+    <a href="#permissoes">Permissões</a>
+    <a href="#testes">Testes</a>
+  </nav>
+
+  <section id="utilizadores">
+    <h2>Criação de Utilizadores</h2>
+    <p>Foram criadas três contas com diferentes níveis de acesso:</p>
+
+    <ul>
+      <li><strong>Formando_Admin</strong> Conta de Administrador, com palavra-passe</li>
+      <li><strong>Formando_Standard</strong> Conta Standard, com palavra-passe</li>
+      <li><strong>Visitante</strong> Conta Convidado, sem palavra-passe</li>
+    </ul>
+
+    <h3>Vídeos</h3>
+    <h4>Formando_Admin</h4>
+    <video controls>
+      <source src="Videos/01_Formando_Admin.mp4" type="video/mp4" />
+    </video>
+
+    <h4>Formando_Standard</h4>
+    <video controls>
+      <source src="Videos/02_Formando_Standard.mp4" type="video/mp4" />
+    </video>
+    <h4>Visitante</h4>
+
+    <video controls>
+      <source src="Videos/03_Visitante.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section id="grupos">
+    <h2>Definição de Grupos</h2>
+
+    <ul>
+      <li><strong>Formando_Admin</strong> - Grupo Administradores</li>
+      <li><strong>Formando_Standard</strong> - Grupo Utilizadores</li>
+      <li><strong>Visitante</strong> - Grupo Convidados</li>
+    </ul>
+
+    <video controls>
+      <source src="Videos/04_Definição_grupos.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section id="permissoes">
+    <h2>Permissões NTFS</h2>
+
+    <table>
+      <tr>
+        <th>Utilizador</th>
+        <th>Permissões</th>
+      </tr>
+      <tr>
+        <td>Formando_Admin</td>
+        <td>Controlo Total</td>
+      </tr>
+      <tr>
+        <td>Formando_Standard</td>
+        <td>Ler e Executar</td>
+      </tr>
+      <tr>
+        <td>Visitante</td>
+        <td>Acesso Negado</td>
+      </tr>
+    </table>
+    <p>
+      <strong>Nota:</strong> para definir permissões específicas, é necessário remover
+      previamente todas as permissões da pasta. Para isso, aceda a <strong>Opções
+        avançadas</strong> e <strong>desativar a herança</strong>. Só depois deverá adicionar os utilizadores e atribuir
+      as respetivas permissões.
+    </p>
+
+    <video controls>
+      <source src="Videos/05_Criação_Pasta.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section id="testes">
+    <h2>Testes de Acesso</h2>
+
+    <table>
+      <tr>
+        <th>Utilizador</th>
+        <th>Ação</th>
+        <th>Resultado</th>
+      </tr>
+      <tr>
+        <td>Formando_Standard</td>
+        <td>Criar ficheiro / Ler ficheiro</td>
+        <td>Acesso negado / Sucesso</td>
+      </tr>
+      <tr>
+        <td>Formando_Admin</td>
+        <td>Criar ficheiro / Ler ficheiro</td>
+        <td>Sucesso / Sucesso</td>
+      </tr>
+      <tr>
+        <td>Visitante</td>
+        <td>Abrir pasta</td>
+        <td>Acesso negado</td>
+      </tr>
+    </table>
+  </section>
+</body>
+
+</html>
